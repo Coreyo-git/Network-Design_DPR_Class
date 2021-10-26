@@ -22,6 +22,7 @@ For two Domain's of the network is: **group2.network**
   - [Hardware Specifications](#hardware-specifications)
   - [Services](#services)
   - [Network Diagram](#network-diagram)
+  - [Rack Diagram](#rack-diagram)
   - [PfSense Configurations](#pfsense-configurations)
     - [Tips](#tips)
     - [Network, IP Address and Gateway](#network-ip-address-and-gateway)
@@ -126,8 +127,11 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ![Network Plan](https://user-images.githubusercontent.com/89438022/138798528-5112dfcb-4ef4-4a48-828a-ba77be8e0711.png)
 
+---
 
+## Rack Diagram
 
+![Rack Diagram](/Rack%20Diagram/phy_diagram.png)
 
 ## PfSense Configurations
 
