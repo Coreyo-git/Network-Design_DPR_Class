@@ -199,6 +199,10 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ---
 
+**Security Perimiter Diagram**
+![Part3Complex3 security perimiter drawio](https://user-images.githubusercontent.com/89438022/138802179-d8506c78-b0e3-467b-9c01-d6b0b253993c.png)
+
+---
 ## Rack Diagram
 
 ![Rack Diagram](/Rack%20Diagram/phy_diagram.png)
