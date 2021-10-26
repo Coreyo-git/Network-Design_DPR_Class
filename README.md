@@ -104,6 +104,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | ----------| ------- | ---------- | ----------- |
 | 192.168.2.254 | SubNet Router | 192.168.2.128 | LAN |
 | 192.168.2.253 | Main Switch | 192.168.2.128 | Main Switch |
+| 192.168.1.132 | IIS WebServer | 192.168.1.128 | Private Web Server |
+| 192.168.1.131 | File Server | 192.168.1.128 | Private File Server|
 | 192.168.2.130 | DC2 | 192.168.2.128 | Backup DC |
 | 192.168.2.129| DC1 | 192.168.2.128 | Main DC |
 
@@ -146,8 +148,10 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | -------------- | ---------------------- | ------------------ | ------------------- |
 | 192.168.1.254 | Router | 192.168.1.128 | LAN |
 | 192.168.1.253 | Main Switch | 192.168.1.128 | Main Switch |
-| 192.168.1.129 | DC2 | 192.168.1.128 | Backup DC |
-| 192.168.1.128 | DC1 | 192.168.1.128 | Main DC |
+| 192.168.1.132 | IIS WebServer | 192.168.1.128 | Private Web Server |
+| 192.168.1.131 | File Server | 192.168.1.128 | Private File Server|
+| 192.168.1.130 | DC2 | 192.168.1.128 | Backup DC |
+| 192.168.1.129 | DC1 | 192.168.1.128 | Main DC |
 
 ### Brisbane Public Range
 
