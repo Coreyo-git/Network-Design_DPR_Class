@@ -3,7 +3,7 @@
 This Schema includes Four networks for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
 For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office
 
-![Network]())
+![Network](/NetworkImage.png)
 
 ## Table of Contents
 
