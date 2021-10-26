@@ -1,9 +1,11 @@
 # Network-Design_DPR_Class
 
-This Schema includes Four networks for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
-For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office
+This Schema includes Five networks, an external network for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
+For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office.
 
 ![Network](/NetworkImage.png)
+
+---
 
 ## Table of Contents
 
@@ -12,12 +14,13 @@ For two Domain's of the network is: **DPR.bris** For the brisbane office, and **
   - [Status and Updates](#status-and-updates)
     - [End of day – 19/10/2021](#end-of-day--19102021)
   - [Tasks and Objectives](#tasks-and-objectives)
+  - [External Network IP Scheme](#external-network-ip-scheme)
   - [Cairns IP Scheme](#cairns-ip-scheme)
-    - [Private Range](#private-range)
-    - [Public Range](#public-range)
+    - [Cairns Private Range](#cairns-private-range)
+    - [Cairns Public Range](#cairns-public-range)
   - [Brisbane IP Scheme](#brisbane-ip-scheme)
-    - [Private Range](#private-range-1)
-    - [Public Range](#public-range-1)
+    - [Brisbane Private Range](#brisbane-private-range)
+    - [Brisbane Public Range](#brisbane-public-range)
   - [Hardware Specifications](#hardware-specifications)
   - [Services](#services)
   - [Network Diagram](#network-diagram)
@@ -25,6 +28,7 @@ For two Domain's of the network is: **DPR.bris** For the brisbane office, and **
   - [PfSense Configurations](#pfsense-configurations)
     - [Tips](#tips)
     - [Network, IP Address and Gateway](#network-ip-address-and-gateway)
+    - [External Network](#external-network)
       - [DPR.bris](#dprbris)
       - [DPR.cairns](#dprcairns)
     - [Port Forwarding Rules](#port-forwarding-rules)
@@ -38,6 +42,7 @@ For two Domain's of the network is: **DPR.bris** For the brisbane office, and **
 Within this section, the status of the network and updates will be tracked weekly.
 
 ### End of day – 19/10/2021
+
 - Main DC – configured and ready for physical install
 - Remote Access available through RDP on 172 network
 - ESXi server for WSUS and FS configured and ready for physical install and Remote/Web access
@@ -51,8 +56,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | #          | Task |
 | ---------- | ------ |
 |  |**ToDo** **26/10** |
-| 1 | Install servers into rack | - [ ]
-| 2 | remote into Main DC and configure roles |
+| 1 | ~~Install servers into rack~~ |
+| 2 | ~~remote into Main DC and configure roles~~ |
 | 3 | access ESXI through web interface and install server 2019 VM |
 | 4 | name DPRWSUS = 172.20.28.147, roles = WSUS, FS  |
 | 5 | wipe and re configure site servers with ESXI 7.0  |
@@ -61,49 +66,110 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ---
 
+## External Network IP Scheme
+
+| Network Range | Gateway | NetMask | CIDR |
+| ------------------------------- | -------------- | --------------- | --- |
+| 172.20.28.0 <=> 172.20.28.255 | 172.20.28.254 | 255.255.255.0 | /24 |
+
+| Exclusion Range |
+| --------------- |
+| 172.20.28.200 <=> 172.20.28.205 |
+
+| IP Address     | Device                 | Network            | Description         |
+| -------------- | ---------------------- | ------------------ | ------------------- |
+| 172.20.28.200 | Top level DC | 172.20.28.0/24 | Main DC head of tree |
+| 172.20.28.201 | ESXi 7 | 172.20.28.0/24 | Main ESXi |
+| 172.20.28.202 | Windows Server 2016 | 172.20.28.0/24 | WSUS and FS |
+| 172.20.28.254 | Gateway |
+
+---
+
 ## Cairns IP Scheme
-### Private Range
+
+### Cairns Private Range
+
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
 | 192.168.2.128 <=> 192.168.2.255 | 192.168.2.254 | 255.255.255.128 | /25 |
 
 | IP Address | Device | Network    | Description |
 | ----------| ------- | ---------- | ----------- |
-| | | | |
+| 192.168.2.254 | SubNet Router | 192.168.2.128 | LAN |
+| 192.168.2.253 | Main Switch | 192.168.2.128 | Main Switch |
+| 192.168.2.130 | DC2 | 192.168.2.128 | Backup DC |
+| 192.168.2.129| DC1 | 192.168.2.128 | Main DC |
 
-### Public Range
+### Cairns Public Range
 
 | Main Network Range | Gateway | NetMask | CIDR |
 | --------------------------------- | -------------- | --------------- | --- |
 | 192.168.2.0 <=> 192.168.2.126 | 192.168.2.126 | 255.255.255.128 | /25 |
 
+| DHCP Range Start | DHCP Range End |
+| ---------------- | -------------- |
+| 192.168.2.20 | 192.168.2.110 |
+
 | IP Address     | Device                 | Network            | Description         |
 | -------------- | ---------------------- | ------------------ | ------------------- |
-| |  |  |
+| 192.168.2.126 | Router | 192.168.2.0 | Main PfSense Router |
+| 192.167.2.125 | Wireless Router | 192.168.2.0 | Access Point |
+| 192.168.2.124 | Main Switch | 192.168.2.0 | Main Switch |
+| 192.167.2.123 | Access Switch | 192.168.2.0 | Access Switch |
+| 192.168.2.122 | IDS | 192.168.2.0 | Intrusion Detection System |
+| 192.168.2.121 | WebServer | 192.168.2.0 | Linux External WebServer |
+| 192.168.2.120 | HMail Server | 192.168.2.0 | External Mail Server |
+| 192.168.2.6 | VMware Centre | 192.168.2.0 | Clustering 11 and 12 |
+| 192.168.2.4 | ESXi 7 | 192.168.2.0 | Main ESXi 3 |
+| 192.168.2.3 | ESXi 7 | 192.168.2.0 | Main ESXi 2 |
+| 192.168.2.2 | ESXi 7 | 192.168.2.0 | Hosting External Email and Web |
+| 192.168.2.1 | SubNet Router | 192.168.2.0 | WAN |
+
+---
 
 ## Brisbane IP Scheme
-### Private Range
+
+### Brisbane Private Range
+
 | Main Network Range | Gateway | NetMask | CIDR |
 | --------------------------------- | -------------- | --------------- | --- |
 | 192.168.1.128 <=> 192.168.1.255 | 192.168.1.254 | 255.255.255.128 | /25 |
 
 | IP Address     | Device                 | Network            | Description         |
 | -------------- | ---------------------- | ------------------ | ------------------- |
-| |  |  |
+| 192.168.1.254 | Router | 192.168.1.128 | LAN |
+| 192.168.1.253 | Main Switch | 192.168.1.128 | Main Switch |
+| 192.168.1.129 | DC2 | 192.168.1.128 | Backup DC |
+| 192.168.1.128 | DC1 | 192.168.1.128 | Main DC |
 
-### Public Range
+
+### Brisbane Public Range
 
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
 | 192.168.1.0 <=> 192.168.1.126 | 192.168.1.126 | 255.255.255.128 | /25 |
 
-| IP Address | Device | Network    | Description |
-| ----------| ------- | ---------- | ----------- |
-| | | | |
+| DHCP Range Start | DHCP Range End |
+| ---------------- | -------------- |
+| 192.168.1.20 | 192.168.1.110 |
+
+| IP Address | Device  | Network    | Description |
+| ----------| -------  | ---------- | ----------- |
+| 192.168.1.126 | Router | 192.168.1.0 | PfSense Main Router |
+| 192.167.2.125 | Wireless Router | 192.168.2.0 | Access Point |
+| 192.168.1.124 | Main Switch | 192.168.1.0 | Main Switch |
+| 192.167.1.123 | Access Switch | 192.168.1.0 | Access Switch |
+| 192.168.1.122 | IDS | 192.168.1.0 | Intrusion Detection System |
+| 192.168.1.121 | WebServer | 192.168.1.0 | External Web Server |
+| 192.168.1.120 | HMail Server | 192.168.1.0 | External Mail Server |
+| 192.168.1.13 | VMware Centre | 192.168.1.0 | Clustering 11 and 12 |
+| 192.168.1.5 | ESXi 7 | 192.168.1.0 | Main ESXi 3 |
+| 192.168.1.4 | ESXi 7 | 192.168.1.0 | Main ESXi 2 |
+| 192.168.1.3 | ESXi 7 | 192.168.1.0 | Guest ESXi Hosting External mail/web |
+| 192.168.1.2 | VPN | 192.168.1.0 | Main VPN |
+| 192.168.1.1 | SubNet Router | 192.168.1.0 | WAN |
 
 ---
-
-
 
 ## Hardware Specifications
 
@@ -153,6 +219,12 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ### Network, IP Address and Gateway
 
+### External Network 
+
+| Network | Range  | Gateway | CIDR |
+| ------- | ------- | ----- | ---- |
+| 172.20.28.0 | .0 - .255 | 172.20.28.254 | /24 |
+
 #### DPR.bris
 
 **Bris Router One, main router, Public:**
@@ -180,6 +252,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | 192.168.2.128 | 192.168.2.254 | .128 - .254| 192.168.2.254 | /25 |
 
 ---
+
 ### Port Forwarding Rules
 
 #### DPR.bris Port Forwarding Settings
@@ -188,7 +261,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 | Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
 | ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
-| | | | | | | 
+| | | | | | |
 > **Subnet-One Router, Private**
 
 | Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
@@ -201,7 +274,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 | Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
 | ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
-| | | | | | | 
+| | | | | | |
 > **Subnet-One Router, Private**
 
 | Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
