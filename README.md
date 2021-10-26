@@ -2,10 +2,10 @@
 
 A repository setup to document and record the plans, implementation and development of a complex Network.
 
-This Schema includes two networks, a public network and a private subnet.
-The Domain of the network is: **group2.network**
+This Schema includes Four networks, a public network and a private subnet.
+For two Domain's of the network is: **group2.network**
 
-![Network]()
+![Network]())
 
 ## Table of Contents
 
@@ -122,7 +122,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ## Network Diagram
 
-![Network Plan](/)
+![Network Plan](./Part3Complex3.jpg)
 
 ## PfSense Configurations
 
