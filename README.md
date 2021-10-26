@@ -124,7 +124,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ## Network Diagram
 
-![Network Plan](./Part3Complex3.jpg)
+![Network Plan]![part3complex3logical(no perimiter)v1 1 drawio](https://user-images.githubusercontent.com/89438022/138797093-9cfb5eb9-4d87-45c4-9e73-85ac4e144c7c.png)
+
 
 ## PfSense Configurations
 
