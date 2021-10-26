@@ -1,9 +1,7 @@
 # Network-Design_DPR_Class
 
-A repository setup to document and record the plans, implementation and development of a complex Network.
-
-This Schema includes Four networks, a public network and a private subnet.
-For two Domain's of the network is: **group2.network**
+This Schema includes Four networks for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
+For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office
 
 ![Network]())
 
@@ -12,6 +10,7 @@ For two Domain's of the network is: **group2.network**
 - [Network-Design_DPR_Class](#network-design_dpr_class)
   - [Table of Contents](#table-of-contents)
   - [Status and Updates](#status-and-updates)
+    - [End of day – 19/10/2021](#end-of-day--19102021)
   - [Tasks and Objectives](#tasks-and-objectives)
   - [Cairns IP Scheme](#cairns-ip-scheme)
     - [Private Range](#private-range)
