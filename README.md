@@ -2,10 +2,8 @@
 
 A repository setup to document and record the plans, implementation and development of a complex Network.
 
-This Schema includes Four networks, a public network and a private subnet.
-For two Domain's of the network is: **group2.network**
-
-![Network]())
+This Schema includes Four networks for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
+For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office
 
 ## Table of Contents
 
