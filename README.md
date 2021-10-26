@@ -36,6 +36,11 @@ For two Domain's of the network is: **DPR.bris** For the brisbane office, and **
 
 Within this section, the status of the network and updates will be tracked weekly.
 
+### End of day – 19/10/2021
+- Main DC – configured and ready for physical install
+- Remote Access available through RDP on 172 network
+- ESXi server for WSUS and FS configured and ready for physical install and Remote/Web access
+
 ---
 
 ## Tasks and Objectives
@@ -45,7 +50,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | #          | Task |
 | ---------- | ------ |
 |  |**ToDo** **26/10** |
-| 1 | Install servers into rack |
+| 1 |[ ] Install servers into rack |
 | 2 | remote into Main DC and configure roles |
 | 3 | access ESXI through web interface and install server 2019 VM |
 | 4 | name DPRWSUS = 172.20.28.147, roles = WSUS, FS  |
