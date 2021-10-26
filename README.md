@@ -23,8 +23,8 @@ The Domain of the network is: **group2.network**
   - [PfSense Configurations](#pfsense-configurations)
     - [Tips](#tips)
     - [Network, IP Address and Gateway](#network-ip-address-and-gateway)
-      - [Network One](#network-one)
-      - [Network Two](#network-two)
+      - [DPR.bris](#dprbris)
+      - [DPR.cairns](#dprcairns)
     - [Port Forwarding Rules](#port-forwarding-rules)
 
 ---
@@ -51,19 +51,6 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | 7 |  |
 | 8 |  |
 | 9 |  |
-| **Title2** | **Insert Tasks here** |
-| 1 |  |
-| 2 |  |
-| 3 |  |
-| 4 |  |
-| 5 |  |
-| 6 |  |
-| 7 |  |
-| 8 |  |
-| 9 |  |
-| 10 | |
-| 11 | |
-| 12 | |
 
 ---
 
@@ -153,9 +140,9 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ### Network, IP Address and Gateway
 
-#### Network One
+#### DPR.bris
 
-**Router one, main router, Public:**
+**Bris Router One, main router, Public:**
 | Network | IP Address | Range  | Gateway | CIDR |
 | ------- | ---------- | ------- | ----- | ---- |
 | 192.168.1.0 | 192.168.1.126 | .0 - .127 | 172.20.28.x | /25 |
@@ -167,7 +154,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ---
 
-#### Network Two
+#### DPR.cairns
 
 **Router one, main router, Public:**
 | Network | IP Address | Range  | Gateway | CIDR |
