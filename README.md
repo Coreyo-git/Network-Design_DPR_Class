@@ -131,6 +131,10 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ![Network Plan](https://user-images.githubusercontent.com/89438022/138798695-536097a1-4e2c-4005-9086-ca1929c168bb.png)
 
+**Security Perimiter Diagram**
+![Part3Complex3 security perimiter drawio](https://user-images.githubusercontent.com/89438022/138802179-d8506c78-b0e3-467b-9c01-d6b0b253993c.png)
+
+
 ---
 
 ## Rack Diagram
