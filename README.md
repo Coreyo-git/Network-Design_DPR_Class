@@ -42,6 +42,12 @@ Within this section, the status of the network and updates will be tracked weekl
 - Remote Access available through RDP on 172 network
 - ESXi server for WSUS and FS configured and ready for physical install and Remote/Web access
 
+### Day of 26/10/2021
+- [ ] Install servers into rack
+- [ ] remote into Main DC and configure AD DS & DNS
+- [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS)
+- [ ] wipe & reconfigure site servers with ESXI 7.0
+- [ ] Reconfigure external routers with new respective LAN addressess (can be wiped instead of reconfigured)
 ---
 
 ## Tasks and Objectives
@@ -51,13 +57,12 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | #          | Task |
 | ---------- | ------ |
 |  |**ToDo** **26/10** |
-| 1 | Install servers into rack | - [ ]
+| 1 | Install servers into rack | 
 | 2 | remote into Main DC and configure roles |
 | 3 | access ESXI through web interface and install server 2019 VM |
 | 4 | name DPRWSUS = 172.20.28.147, roles = WSUS, FS  |
 | 5 | wipe and re configure site servers with ESXI 7.0  |
-| 6 | all site servers will be server 2016 |
-| 7 | configure external routers with new LAN addresses  ( can be wiped prior) |
+| 6 | configure external routers with new LAN addresses  ( can be wiped prior) |
 
 ---
 
@@ -130,10 +135,6 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ## Network Diagram
 
 ![Network Plan](https://user-images.githubusercontent.com/89438022/138798695-536097a1-4e2c-4005-9086-ca1929c168bb.png)
-
-**Security Perimiter Diagram**
-![Part3Complex3 security perimiter drawio](https://user-images.githubusercontent.com/89438022/138802179-d8506c78-b0e3-467b-9c01-d6b0b253993c.png)
-
 
 ---
 
