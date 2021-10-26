@@ -13,10 +13,12 @@ For two Domain's of the network is: **group2.network**
   - [Table of Contents](#table-of-contents)
   - [Status and Updates](#status-and-updates)
   - [Tasks and Objectives](#tasks-and-objectives)
-  - [Public Network IP Schema](#public-network-ip-schema)
-  - [Subnet IP Schema](#subnet-ip-schema)
-    - [Second Network](#second-network)
-  - [Subnet 2 IP Schema](#subnet-2-ip-schema)
+  - [Cairns IP Scheme](#cairns-ip-scheme)
+    - [Private Range](#private-range)
+    - [Public Range](#public-range)
+  - [Brisbane IP Scheme](#brisbane-ip-scheme)
+    - [Private Range](#private-range-1)
+    - [Public Range](#public-range-1)
   - [Hardware Specifications](#hardware-specifications)
   - [Services](#services)
   - [Network Diagram](#network-diagram)
@@ -26,6 +28,8 @@ For two Domain's of the network is: **group2.network**
       - [DPR.bris](#dprbris)
       - [DPR.cairns](#dprcairns)
     - [Port Forwarding Rules](#port-forwarding-rules)
+      - [DPR.bris](#dprbris-1)
+      - [DPR.cairns](#dprcairns-1)
 
 ---
 
@@ -166,6 +170,21 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ---
 ### Port Forwarding Rules
+
+#### DPR.bris
+
+> **Main Router, Public**
+
+| Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
+| ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
+| | | | | | | 
+> **Subnet-One Router, Private**
+
+| Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
+| ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
+| | | | | | | |
+
+#### DPR.cairns
 
 > **Main Router, Public**
 
