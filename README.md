@@ -124,7 +124,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ## Network Diagram
 
-![Network Plan](https://user-images.githubusercontent.com/89438022/138797236-2b6d96fb-5b8b-41b0-9a61-69cf813fee59.png)
+![Network Plan](https://user-images.githubusercontent.com/89438022/138797485-fa9a0755-f4cc-4156-ae53-1ebbbd2679fd.png)
+
 
 
 ## PfSense Configurations
