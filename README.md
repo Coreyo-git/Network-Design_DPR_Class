@@ -1,9 +1,11 @@
 # Network-Design_DPR_Class
 
-This Schema includes Four networks for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
-For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office
+A repository setup to document and record the plans, implementation and development of a complex Network.
 
-![Network](./NetworkImage.png)
+This Schema includes Four networks, a public network and a private subnet.
+For two Domain's of the network is: **group2.network**
+
+![Network]())
 
 ## Table of Contents
 
@@ -12,11 +14,11 @@ For two Domain's of the network is: **DPR.bris** For the brisbane office, and **
   - [Status and Updates](#status-and-updates)
   - [Tasks and Objectives](#tasks-and-objectives)
   - [Cairns IP Scheme](#cairns-ip-scheme)
-    - [Cairns Private Range](#cairns-private-range)
+    - [Private Range](#private-range)
     - [Public Range](#public-range)
   - [Brisbane IP Scheme](#brisbane-ip-scheme)
-    - [Brisbane Private Range](#brisbane-private-range)
-    - [Brisbane Public Range](#brisbane-public-range)
+    - [Private Range](#private-range-1)
+    - [Public Range](#public-range-1)
   - [Hardware Specifications](#hardware-specifications)
   - [Services](#services)
   - [Network Diagram](#network-diagram)
@@ -50,7 +52,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | #          | Task |
 | ---------- | ------ |
 |  |**ToDo** **26/10** |
-| 1 |[ ] Install servers into rack |
+| 1 | Install servers into rack | - [ ]
 | 2 | remote into Main DC and configure roles |
 | 3 | access ESXI through web interface and install server 2019 VM |
 | 4 | name DPRWSUS = 172.20.28.147, roles = WSUS, FS  |
@@ -61,9 +63,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ---
 
 ## Cairns IP Scheme
-
-### Cairns Private Range
-
+### Private Range
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
 | 192.168.2.128 <=> 192.168.2.255 | 192.168.2.254 | 255.255.255.128 | /25 |
@@ -75,7 +75,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ### Public Range
 
 | Main Network Range | Gateway | NetMask | CIDR |
-| ----------------------------- | ------------- | --------------- | --- |
+| --------------------------------- | -------------- | --------------- | --- |
 | 192.168.2.0 <=> 192.168.2.126 | 192.168.2.126 | 255.255.255.128 | /25 |
 
 | IP Address     | Device                 | Network            | Description         |
@@ -83,18 +83,16 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | |  |  |
 
 ## Brisbane IP Scheme
-
-### Brisbane Private Range
-
+### Private Range
 | Main Network Range | Gateway | NetMask | CIDR |
-| --------------------------------- | -------------- | --------------- | ----------- |
-| 192.168.1.128 <=> 192.168.1.255   | 192.168.1.254  | 255.255.255.128 | /25         |
+| --------------------------------- | -------------- | --------------- | --- |
+| 192.168.1.128 <=> 192.168.1.255 | 192.168.1.254 | 255.255.255.128 | /25 |
 
-| IP Address                        | Device         | Network         | Description |
-| --------------------------------- | -------------- | --------------- | ----------- |
+| IP Address     | Device                 | Network            | Description         |
+| -------------- | ---------------------- | ------------------ | ------------------- |
 | |  |  |
 
-### Brisbane Public Range
+### Public Range
 
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
@@ -105,6 +103,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | | | | |
 
 ---
+
+
 
 ## Hardware Specifications
 
