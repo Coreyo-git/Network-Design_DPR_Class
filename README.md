@@ -13,6 +13,8 @@ For two Domain's of the network is: **DPR.bris** For the brisbane office, and **
   - [Table of Contents](#table-of-contents)
   - [Status and Updates](#status-and-updates)
     - [End of day – 19/10/2021](#end-of-day--19102021)
+    - [Day of 26/10/2021](#day-of-26102021)
+  - [- [ ] Reconfigure external routers with new respective LAN addressess (can be wiped instead of reconfigured)](#----reconfigure-external-routers-with-new-respective-lan-addressess-can-be-wiped-instead-of-reconfigured)
   - [Tasks and Objectives](#tasks-and-objectives)
   - [External Network IP Scheme](#external-network-ip-scheme)
   - [Cairns IP Scheme](#cairns-ip-scheme)
@@ -61,14 +63,9 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 | #          | Task |
 | ---------- | ------ |
-|  |**ToDo** **26/10** |
-<<<<<<< HEAD
+|   |**ToDo** **26/10** |
 | 1 | ~~Install servers into rack~~ |
 | 2 | ~~remote into Main DC and configure roles~~ |
-=======
-| 1 | Install servers into rack | 
-| 2 | remote into Main DC and configure roles |
->>>>>>> f908c50b634431eecd070f002eafbfe1c41a28e6
 | 3 | access ESXI through web interface and install server 2019 VM |
 | 4 | name DPRWSUS = 172.20.28.147, roles = WSUS, FS  |
 | 5 | wipe and re configure site servers with ESXI 7.0  |
@@ -151,7 +148,6 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | 192.168.1.253 | Main Switch | 192.168.1.128 | Main Switch |
 | 192.168.1.129 | DC2 | 192.168.1.128 | Backup DC |
 | 192.168.1.128 | DC1 | 192.168.1.128 | Main DC |
-
 
 ### Brisbane Public Range
 
