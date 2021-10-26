@@ -28,8 +28,8 @@ For two Domain's of the network is: **group2.network**
       - [DPR.bris](#dprbris)
       - [DPR.cairns](#dprcairns)
     - [Port Forwarding Rules](#port-forwarding-rules)
-      - [DPR.bris](#dprbris-1)
-      - [DPR.cairns](#dprcairns-1)
+      - [DPR.bris Port Forwarding Settings](#dprbris-port-forwarding-settings)
+      - [DPR.cairns Port Forwarding Settings](#dprcairns-port-forwarding-settings)
 
 ---
 
@@ -171,7 +171,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ---
 ### Port Forwarding Rules
 
-#### DPR.bris
+#### DPR.bris Port Forwarding Settings
 
 > **Main Router, Public**
 
@@ -184,7 +184,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
 | | | | | | | |
 
-#### DPR.cairns
+#### DPR.cairns Port Forwarding Settings
 
 > **Main Router, Public**
 
