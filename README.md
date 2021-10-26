@@ -124,7 +124,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ## Network Diagram
 
-![Network Plan](https://user-images.githubusercontent.com/89438022/138797485-fa9a0755-f4cc-4156-ae53-1ebbbd2679fd.png)
+![Network Plan](https://user-images.githubusercontent.com/89438022/138798528-5112dfcb-4ef4-4a48-828a-ba77be8e0711.png)
+
 
 
 
