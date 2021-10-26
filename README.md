@@ -60,7 +60,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ### Private Range
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
-| 192.168.1.128 <=> 192.168.1.255 | 192.168.1.254 | 255.255.255.128 | /25 |
+| 192.168.2.128 <=> 192.168.2.255 | 192.168.2.254 | 255.255.255.128 | /25 |
 
 | IP Address | Device | Network    | Description |
 | ----------| ------- | ---------- | ----------- |
@@ -80,7 +80,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ### Private Range
 | Main Network Range | Gateway | NetMask | CIDR |
 | --------------------------------- | -------------- | --------------- | --- |
-| 192.168.2.128 <=> 192.168.2.255 | 192.168.2.254 | 255.255.255.128 | /25 |
+| 192.168.1.128 <=> 192.168.1.255 | 192.168.1.254 | 255.255.255.128 | /25 |
 
 | IP Address     | Device                 | Network            | Description         |
 | -------------- | ---------------------- | ------------------ | ------------------- |
@@ -90,7 +90,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
-| 192.168.2.0 <=> 192.168.2.126 | 192.168.2.126 | 255.255.255.128 | /25 |
+| 192.168.1.0 <=> 192.168.1.126 | 192.168.1.126 | 255.255.255.128 | /25 |
 
 | IP Address | Device | Network    | Description |
 | ----------| ------- | ---------- | ----------- |
