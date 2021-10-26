@@ -2,8 +2,10 @@
 
 A repository setup to document and record the plans, implementation and development of a complex Network.
 
-This Schema includes Four networks for Davis Property Rentals in two Offices in Brisbane and Cairns, a public network and a private subnet for each.
-For two Domain's of the network is: **DPR.bris** For the brisbane office, and **DPR.cairns** for the Cairns based office
+This Schema includes Four networks, a public network and a private subnet.
+For two Domain's of the network is: **group2.network**
+
+![Network]())
 
 ## Table of Contents
 
@@ -50,20 +52,28 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ---
 
-## Public Network IP Schema
-
+## Cairns IP Scheme
+### Private Range
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
-| 192.168.1.0 <=> 192.168.1.127 | 192.168.1.126 | 255.255.255.128 | /25 |
+| 192.168.1.128 <=> 192.168.1.255 | 192.168.1.254 | 255.255.255.128 | /25 |
 
 | IP Address | Device | Network    | Description |
 | ----------| ------- | ---------- | ----------- |
 | | | | |
 
----
+### Public Range
 
-## Subnet IP Schema
+| Main Network Range | Gateway | NetMask | CIDR |
+| --------------------------------- | -------------- | --------------- | --- |
+| 192.168.2.0 <=> 192.168.2.126 | 192.168.2.126 | 255.255.255.128 | /25 |
 
+| IP Address     | Device                 | Network            | Description         |
+| -------------- | ---------------------- | ------------------ | ------------------- |
+| |  |  |
+
+## Brisbane IP Scheme
+### Private Range
 | Main Network Range | Gateway | NetMask | CIDR |
 | --------------------------------- | -------------- | --------------- | --- |
 | 192.168.2.128 <=> 192.168.2.255 | 192.168.2.254 | 255.255.255.128 | /25 |
@@ -72,11 +82,11 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | -------------- | ---------------------- | ------------------ | ------------------- |
 | |  |  |
 
-### Second Network
+### Public Range
 
 | Main Network Range | Gateway | NetMask | CIDR |
 | ------------------------------- | -------------- | --------------- | --- |
-| 192.168.2.0 <=> 192.168.2.127 | 192.168.2.126 | 255.255.255.128 | /25 |
+| 192.168.2.0 <=> 192.168.2.126 | 192.168.2.126 | 255.255.255.128 | /25 |
 
 | IP Address | Device | Network    | Description |
 | ----------| ------- | ---------- | ----------- |
@@ -84,15 +94,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 ---
 
-## Subnet 2 IP Schema
 
-| Main Network Range | Gateway | NetMask | CIDR |
-| --------------------------------- | -------------- | --------------- | --- |
-| 192.168.2.128 <=> 192.168.2.255 | 192.168.2.254 | 255.255.255.128 | /25 |
-
-| IP Address     | Device                 | Network            | Description         |
-| -------------- | ---------------------- | ------------------ | ------------------- |
-| |  |  |
 
 ## Hardware Specifications
 
