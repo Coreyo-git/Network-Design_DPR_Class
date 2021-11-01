@@ -59,11 +59,12 @@ Within this section, the status of the network and updates will be tracked weekl
 ---
 ### Day of 1/11/2021
 - [x] Configure ADDS (Rhys)
-- [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS) (Andrew)
+- [x] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS) (Andrew)
 - [x] Reinstall external router OS & add new respective LAN addressess as per of IP Scheme (Rhys)
-- [ ] wipe/reconfigure site servers with ESXI 7.0 (Rom/Reece)
+- [x] wipe/reconfigure site servers with ESXI 7.0 (Rom/Reece)
 - [x] Change workstations to have appropriate static IP's (reece/Rhys)
-- [ ] Add all required OS to datastores (Rhys)
+- [x] Add all required OS to datastores (Rhys)
+- [ ] create all required VM's
 ---
 ## Tasks and Objectives
 
