@@ -201,6 +201,17 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | Cisco Switch 2801 | N/A | Switch | 1x |
 
 ---
+### User info
+
+| Username | Password |
+| -------- | -------- |
+| Rhys | UselessPassword |
+| Lachlan | LachlanPassword1! |
+| John Group 1 | Password1 |
+| (Rom) Group 2 | Password1 |
+| Reece | Password1! |
+| Andrew | Password1 |
+| Corey | Password1 |
 
 ## Services
 
