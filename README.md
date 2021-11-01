@@ -50,13 +50,21 @@ Within this section, the status of the network and updates will be tracked weekl
 - ESXi server for WSUS and FS configured and ready for physical install and Remote/Web access
 
 ### Day of 26/10/2021
-- [ ] Install servers into rack
-- [ ] remote into Main DC and configure AD DS & DNS
+- [x] Install servers into rack
+- [x] remote into Main DC and install AD DS & DNS
+- [ ] Configure ADDS
 - [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS)
 - [ ] wipe & reconfigure site servers with ESXI 7.0
 - [ ] Reconfigure external routers with new respective LAN addressess (can be wiped instead of reconfigured)
 ---
-
+### Day of 1/11/2021
+- [ ] Configure ADDS
+- [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS)
+- [ ] Reinstall external router OS & add new respective LAN addressess as per of IP Scheme
+- [ ] wipe/reconfigure site servers with ESXI 7.0
+- [ ] Change workstations to have appropriate static IP's
+- [ ] Add all required OS to datastores 
+---
 ## Tasks and Objectives
 
 This section covers tasks and objectives yet to be achieved towards the completion of the network plan
