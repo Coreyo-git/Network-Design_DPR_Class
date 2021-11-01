@@ -58,7 +58,7 @@ Within this section, the status of the network and updates will be tracked weekl
 - [ ] Reconfigure external routers with new respective LAN addressess (can be wiped instead of reconfigured)
 ---
 ### Day of 1/11/2021
-- [ ] Configure ADDS
+- [x] Configure ADDS
 - [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS)
 - [ ] Reinstall external router OS & add new respective LAN addressess as per of IP Scheme
 - [ ] wipe/reconfigure site servers with ESXI 7.0
