@@ -66,6 +66,12 @@ Within this section, the status of the network and updates will be tracked weekl
 - [x] Add all required OS to datastores (Rhys)
 - [ ] create all required VM's
 ---
+### Day of 2/11/2021
+- [ ] COnfigure site DC's as child of parent (Rom)
+- [ ] configure Vcenter & clusters (Rhys)
+- [ ] Create other VM's (Reece/ Andrew)
+- [ ] configure firewall on external router
+- [ ] COnfigure virtual router
 ## Tasks and Objectives
 
 This section covers tasks and objectives yet to be achieved towards the completion of the network plan
