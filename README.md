@@ -86,6 +86,9 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | 5 | wipe and re configure site servers with ESXI 7.0  |
 | 6 | configure external routers with new LAN addresses  ( can be wiped prior) |
 
+### notes & errors
+
+> Vsphere installed and configured, but not aloud to add hosts as is a free license. (work arounds)?
 ---
 
 ## External Network IP Scheme
