@@ -92,7 +92,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | 1 | ~~Install servers into rack~~ |
 | 2 | ~~remote into Main DC and configure roles~~ |
 | 3 | access ESXI through web interface and install server 2019 VM |
-| 4 | name DPRWSUS = 172.20.28.147, roles = WSUS, FS  |
+| 4 | name DPRWSUS = 172.20.28.202, roles = WSUS, FS  |
 | 5 | wipe and re configure site servers with ESXI 7.0  |
 | 6 | configure external routers with new LAN addresses  ( can be wiped prior) |
 
