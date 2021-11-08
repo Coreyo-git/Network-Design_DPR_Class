@@ -74,11 +74,15 @@ Within this section, the status of the network and updates will be tracked weekl
 - [ ] COnfigure virtual router
 ---
 ### Day of 8/11/2021
-- [ ] COnfigure site DC's as child of parent (Rom)
-- [ ] configure Vcenter & clusters (temporalily abandoned)
+- [ ] Configure site DC's as child of parent (Rom)
+- [x] configure Vcenter & clusters (Rhys)
 - [ ] Create other VM's (Reece/ Andrew)
-- [ ] configure firewall on external router (Corey/Rhys)
-- [ ] COnfigure virtual router (Corey/Rhys)
+- [x] configure firewall on external router and create export (Corey)
+- [x] Configure virtual router for Bris and create export (Corey)
+- [ ] Import router configs on cairns site
+- [x] Add VM's to hosts in vcenter (Rhys)
+- [ ] Initial configuration of VM's (Rhys)
+- [ ] Cairns hmail\spiceworks & web VM's (Rom)
 
 ---
 
@@ -99,6 +103,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ### notes & errors
 
 > Vsphere installed and configured, but not aloud to add hosts as is a free license. (work arounds)?
+> error with Vcenter was- vcenter version 6.7 cannot add esxi 7.0 - reverted esxi host back to 6.7.
 ---
 
 ## External Network IP Scheme
