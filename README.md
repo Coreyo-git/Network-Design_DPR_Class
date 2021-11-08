@@ -81,10 +81,21 @@ Within this section, the status of the network and updates will be tracked weekl
 - [x] Configure virtual router for Bris and create export (Corey)
 - [ ] Import router configs on cairns site
 - [x] Add VM's to hosts in vcenter (Rhys)
-- [ ] Initial configuration of VM's (Rhys)
-- [ ] Cairns hmail\spiceworks & web VM's (Rom)
+- [x] Initial configuration of VM's for Cairns Private (Rhys)
+- [x] Cairns install hmail\spiceworks & web VM's (Rom)
 
 ---
+
+### Day of 9/11/2021
+- [ ] Export bris site firewalls & import to Cairns site (Rhys)
+- [ ] Roll back Bris site to ESXI6.7 (Rhys)
+- [ ] Install vcenter & cluster (Rhys)
+- [ ] install vm's in cluster (Rhys)
+- [ ] configure both site vm's (all)
+- [ ] create RAS server
+- [ ] once site domains are adeded to parent, configure hmail
+- [ ] ensure all devices have connectivity & internet
+- [ ] end of day progress report for entire project (all)
 
 ## Tasks and Objectives
 
