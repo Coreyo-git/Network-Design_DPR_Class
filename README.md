@@ -53,7 +53,7 @@ Within this section, the status of the network and updates will be tracked weekl
 - [x] Install servers into rack
 - [x] remote into Main DC and install AD DS & DNS
 - [ ] Configure ADDS
-- [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.147/roles=WSUS\FS)
+- [ ] access ESXI through web interface & install server 2019 VM (Name= DPRWSUS-172.20.28.202/roles=WSUS\FS)
 - [ ] wipe & reconfigure site servers with ESXI 7.0
 - [ ] Reconfigure external routers with new respective LAN addressess (can be wiped instead of reconfigured)
 ---
