@@ -259,6 +259,7 @@ This section covers tasks and objectives yet to be achieved towards the completi
 ## PfSense Configurations
 
 > Below will document all the changes and setup for PfSense
+> initial config set to dynamic WAN address & static LAN address, no DHCP or VLAN's
 
 ---
 
