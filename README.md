@@ -116,6 +116,8 @@ This section covers tasks and objectives yet to be achieved towards the completi
 | 172.20.28.200 | Top level DC | 172.20.28.0/24 | Main DC head of tree |
 | 172.20.28.201 | ESXi 7 | 172.20.28.0/24 | Main ESXi |
 | 172.20.28.202 | Windows Server 2016 | 172.20.28.0/24 | WSUS and FS |
+| 172.20.28.204 | Cairns Router | 172.20.28.0/24 | Main Phys |
+| 172.20.28.205 | Brisbane Router | 172.20.28.0/24 | Main Phys |
 | 172.20.28.254 | Gateway |
 
 ---
