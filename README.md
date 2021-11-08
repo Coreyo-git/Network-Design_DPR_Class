@@ -72,6 +72,16 @@ Within this section, the status of the network and updates will be tracked weekl
 - [ ] Create other VM's (Reece/ Andrew)
 - [ ] configure firewall on external router
 - [ ] COnfigure virtual router
+---
+### Day of 8/11/2021
+- [ ] COnfigure site DC's as child of parent (Rom)
+- [ ] configure Vcenter & clusters (temporalily abandoned)
+- [ ] Create other VM's (Reece/ Andrew)
+- [ ] configure firewall on external router (Corey/Rhys)
+- [ ] COnfigure virtual router (Corey/Rhys)
+
+---
+
 ## Tasks and Objectives
 
 This section covers tasks and objectives yet to be achieved towards the completion of the network plan
