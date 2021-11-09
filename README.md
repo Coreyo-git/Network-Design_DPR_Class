@@ -332,24 +332,24 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 > **Main Router, Public**
 
-| Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
-| ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
-| | | | | | |
+| Client Port | Server Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
+| ----------- | ----------- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
+| | | | | | | |
 > **Subnet-One Router, Private**
 
-| Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
-| ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
+| Client Port | Server Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
+| ----------- | ----------- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
 | | | | | | | |
 
 #### DPR.cairns Port Forwarding Settings
 
 > **Main Router, Public**
 
-| Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
-| ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
-| | | | | | |
+| Client Port | Server Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
+| ----------- | ----------- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
+| | | | | | | |
 > **Subnet-One Router, Private**
 
-| Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
-| ---- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
+| Client Port | Server Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
+| ----------- | ----------- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
 | | | | | | | |
