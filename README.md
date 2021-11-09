@@ -334,7 +334,21 @@ This section covers tasks and objectives yet to be achieved towards the completi
 
 | Client Port | Server Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
 | ----------- | ----------- | ------- | ---------- | ------ | -------- | ----------- | ------------------ |
-| | | | | | | |
+| 49152-65535 | 123 | NTP | 192.168.1.129/25 | DC1 | UDP | W32 Time | LAN to WAN |
+| 49152-65535 | 123 | RPC | 192.168.1.129/25 | DC1 | TCP | Endpoint Mapper | LAN to WAN |
+| 49152-65535 | 123 | Kerb | 192.168.1.129/25 | DC1 | TCP/UDP | Password Change| LAN to WAN |
+| 49152-65535 | 123 | RPC | 192.168.1.129/25 | DC1 | TCP | for LSA SAM NetLogon | LAN to WAN |
+| 49152-65535 | 123 | LDAP | 192.168.1.129/25 | DC1 | TCP/UDP | LDAP | LAN to WAN |
+| 49152-65535 | 123 | LDAP | 192.168.1.129/25 | DC1 | TCP | SSL | LAN to WAN |
+| 49152-65535 | 123 | LDAP | 192.168.1.129/25 | DC1 | TCP | GC | LAN to WAN |
+| 49152-65535 | 123 | LDAP | 192.168.1.129/25 | DC1 | TCP | GC SSL | LAN to WAN |
+| 53 | 123 | DNS | 192.168.1.129/25 | DC1 | TCP/UDP | DNS | LAN to WAN |
+| 49152-65535 | 123 | DNS | 192.168.1.129/25 | DC1 | TCP/UDP | DNS | LAN to WAN |
+| 49152-65535 | 123 | RPC | 192.168.1.129/25 | DC1 | TCP | FRS | LAN to WAN |
+| 49152-65535 | 123 | Kerb | 192.168.1.129/25 | DC1 | UDP | Kerberos | LAN to WAN |
+| 49152-65535 | 123 | SMB | 192.168.1.129/25 | DC1 | TCP | SMB | LAN to WAN |
+| 49152-65535 | 123 | RPC | 192.168.1.129/25 | DC1 | TCP | DFSR | LAN to WAN |
+
 > **Subnet-One Router, Private**
 
 | Client Port | Server Port | Service | IP Address | Device | Protocol | Description | Source/Destination |
