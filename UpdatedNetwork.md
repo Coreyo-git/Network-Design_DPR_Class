@@ -2,7 +2,7 @@
 
 ## Brisbane Network
 
-### Brisbane Domain: domainHere
+### Brisbane Domain: brisbane.local
 
 ### Brisbane Public
 
@@ -53,7 +53,7 @@
 
 ## Carins Network
 
-### Cairns Domain: domainHere
+### Cairns Domain: cairns.local
 
 ### Carins Public
 
