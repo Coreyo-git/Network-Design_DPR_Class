@@ -1,5 +1,22 @@
 # Network Map
 
+## External/ISP Network
+
+| Network Range | Gateway | NetMask | CIDR |
+| ------------------------------- | -------------- | --------------- | --- |
+| 172.20.28.0 <=> 172.20.28.255 | 172.20.28.254 | 255.255.255.0 | /24 |
+
+| Exclusion Range |
+| --------------- |
+| 172.20.28.200 <=> 172.20.28.205 |
+
+| IP Address     | Device                 | Network            | Description         |
+| -------------- | ---------------------- | ------------------ | ------------------- |
+| 172.20.28.200 | Top level DC | 172.20.28.0/24 | Main DC head of tree |
+| 172.20.28.204 | Cairns Router | 172.20.28.0/24 | Main Phys |
+| 172.20.28.205 | Brisbane Router | 172.20.28.0/24 | Main Phys |
+| 172.20.28.254 | Gateway |
+
 ## Brisbane Network
 
 ### Brisbane Domain: brisbane.local
