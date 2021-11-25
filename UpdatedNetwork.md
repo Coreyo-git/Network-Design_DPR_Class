@@ -12,7 +12,6 @@
 
 | IP Address     | Device                 | Network            | Description         |
 | -------------- | ---------------------- | ------------------ | ------------------- |
-| 172.20.28.200 | Top level DC | 172.20.28.0/24 | Main DC head of tree |
 | 172.20.28.204 | Cairns Router | 172.20.28.0/24 | Main Phys |
 | 172.20.28.205 | Brisbane Router | 172.20.28.0/24 | Main Phys |
 | 172.20.28.254 | Gateway |
